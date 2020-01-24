@@ -1,5 +1,6 @@
 #!/bin/zsh
-pip install --target ./package requests
+mkdir -p package
+pip3 install --target ./package requests
 cd package
 zip -r9 ${OLDPWD}/function.zip .
 cd $OLDPWD
